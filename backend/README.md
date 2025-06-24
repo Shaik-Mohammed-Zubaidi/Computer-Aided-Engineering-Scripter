@@ -1,6 +1,5 @@
 ### **`backend/README.md`**
 
-```markdown
 # Backend (Flask + OpenAI + LangChain)
 
 Exposes **POST /run_agent**:
