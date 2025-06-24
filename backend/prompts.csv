@@ -1,0 +1,16 @@
+prompt                                                                      , intent (optional) 
+Create a 10 mm × 10 mm × 10 mm cube named Cube1                             ,geometry          
+Mesh Cube1 with 5 mm HEX elements                                           ,meshing           
+Add a steel material (E = 210 GPa, ν = 0.3) and assign it to Cube1          ,material          
+Fix the bottom face of Cube1 and apply 1000 N pressure on the top face      ,BC + load         
+Create a static step called Step-1 and run the job CubeJob                  ,step + job        
+Print the total number of elements in Cube1 after meshing                   ,query             
+Save the model database after the job completes                             ,save MDB          
+Open the job’s ODB and report the maximum von Mises stress                  ,post-proc         
+Create a 50 mm diameter, 5 mm thick circular plate and mesh with 4 mm quads ,sketch + mesh     
+Apply a temperature load of −50 °C to the whole plate in Step-1             ,temp load         
+Create a 100 mm long, 10 mm square beam, mesh with B31 elements             ,beam              
+Fix the left end of the beam and apply a 500 N tip load on the right end    ,BC + load         
+Report the tip displacement in the Y direction                              ,history output    
+Create a hollow cylinder (r\_in = 20 mm, r\_out = 25 mm, length = 100 mm)   ,boolean           
+Seed the cylinder part with 4 mm and print the element count                ,mesh query        
