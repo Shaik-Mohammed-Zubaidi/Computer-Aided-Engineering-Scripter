@@ -41,5 +41,7 @@ frontend/
  └─ package.json
 ```
 
+![alt text](<Screenshot 2025-06-24 at 01.30.32.png>)
+
 No routing, no global state—just React hooks and fetch.
 
